@@ -1,0 +1,64 @@
+// Copyright (C) 2016 i-Chips Technology Inc. All Rights Reserved.
+
+
+#ifndef INCLUDED_INDIVIDUAL_PARAM_H
+#define INCLUDED_INDIVIDUAL_PARAM_H
+
+//===== Input ====//
+extern int IPI_ACT_HST[4];
+extern int IPI_ACT_HW[4];
+extern int IPI_ACT_VST[4];
+extern int IPI_ACT_VW[4];
+
+extern int IPM_IACT_HW[4];
+extern int IPM_IACT_VW[4];
+
+extern int IPS_CUR_DEF_IX[4][9];
+extern int IPS_CUR_DEF_IY[4][9];
+
+//===== Warping ====//
+extern int IPM_SEL_GRID_X[4];
+extern int IPM_SEL_GRID_Y[4];
+extern coord_f_t IPM_GRID[4][9][9];
+extern int IPM_WP_MODE[4];
+extern int IPM_CUR_INTERNAL_ON[4];
+
+extern int IGV_PREV_SEL_GRID_X[4];
+extern int IGV_PREV_SEL_GRID_Y[4];
+
+extern int IGV_WP_TABLE_COLOR[4];
+
+//===== Edgeblend Gain ====//
+extern int IPS_SPLIT_IMAGE[4];// splitter
+
+extern int IPM_EGB_LEN[4];
+extern int IPM_EGB_REN[4];
+extern int IPM_EGB_TEN[4];
+extern int IPM_EGB_BEN[4];
+
+//===== Edgeblend Bias ====//
+extern coord_t IPM_EBIAS_CUR[4][2][2];
+extern int IPM_EBIAS[4][16][3];
+
+//===== Test Pattern ====//
+extern int IPM_OFILL_EN[4];
+
+//===== Uniformity ====//
+extern int IPM_UC_EN[4];
+extern float IPM_UC_GAIN[3][3][11][9];
+
+//===== Color Convergence ====//
+extern coord_t IPM_WP_CCVG[3];
+
+//===== OSD ====//
+extern int IPS_WP_BLACTHST;
+extern int IPS_WP_BLACTVST;
+
+//===== Register ====//
+extern int IGV_RTCT[4];
+extern int IGV_EGBCT[4];
+
+//===== Write register control parameters for evbBoard =====//
+extern int IGV_MCR64BANK;	// for write(read)_C787()
+
+#endif

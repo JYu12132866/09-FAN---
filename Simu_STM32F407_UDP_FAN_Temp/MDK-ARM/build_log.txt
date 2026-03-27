@@ -1,0 +1,79 @@
+Build target 'Debug'
+compiling main.c...
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth_conf.h(33): warning:  #47-D: incompatible redefinition of macro "PHY_RESET_DELAY" (declared at line 227 of "../Core/Inc/stm32f4xx_hal_conf.h")
+        #define PHY_RESET_DELAY    ((uint32_t)0x000FFFFF)       //PHY复位延时
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth_conf.h(34): warning:  #47-D: incompatible redefinition of macro "PHY_CONFIG_DELAY" (declared at line 229 of "../Core/Inc/stm32f4xx_hal_conf.h")
+        #define PHY_CONFIG_DELAY   ((uint32_t)0x00FFFFFF)       //PHY配置延时
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth_conf.h(39): warning:  #47-D: incompatible redefinition of macro "PHY_SR" (declared at line 255 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_SR                                ((uint16_t)31)          //LAN8720的PHY状态寄存器地址
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth_conf.h(40): warning:  #47-D: incompatible redefinition of macro "PHY_SPEED_STATUS" (declared at line 257 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_SPEED_STATUS    ((uint16_t)0x0004)        //LAN8720 PHY速度值掩码
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth_conf.h(41): warning:  #47-D: incompatible redefinition of macro "PHY_DUPLEX_STATUS" (declared at line 258 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_DUPLEX_STATUS   ((uint16_t)0x00010) //LAN8720 PHY连接状态值掩码  
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(533): warning:  #47-D: incompatible redefinition of macro "PHY_READ_TO" (declared at line 231 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_READ_TO                     ((uint32_t)0x0004FFFF)
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(534): warning:  #47-D: incompatible redefinition of macro "PHY_WRITE_TO" (declared at line 232 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_WRITE_TO                    ((uint32_t)0x0004FFFF)
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(543): warning:  #47-D: incompatible redefinition of macro "PHY_BCR" (declared at line 236 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_BCR                          0          /*!< Transceiver Basic Control Register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(544): warning:  #47-D: incompatible redefinition of macro "PHY_BSR" (declared at line 237 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_BSR                          1          /*!< Transceiver Basic Status Register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(559): warning:  #47-D: incompatible redefinition of macro "PHY_FULLDUPLEX_100M" (declared at line 241 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_FULLDUPLEX_100M             ((uint16_t)0x2100)      /*!< Set the full-duplex mode at 100 Mb/s */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(560): warning:  #47-D: incompatible redefinition of macro "PHY_HALFDUPLEX_100M" (declared at line 242 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_HALFDUPLEX_100M             ((uint16_t)0x2000)      /*!< Set the half-duplex mode at 100 Mb/s */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(561): warning:  #47-D: incompatible redefinition of macro "PHY_FULLDUPLEX_10M" (declared at line 243 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_FULLDUPLEX_10M              ((uint16_t)0x0100)      /*!< Set the full-duplex mode at 10 Mb/s */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(562): warning:  #47-D: incompatible redefinition of macro "PHY_HALFDUPLEX_10M" (declared at line 244 of "../Core/Inc/stm32f4xx_hal_conf.h")
+  #define PHY_HALFDUPLEX_10M              ((uint16_t)0x0000)      /*!< Set the half-duplex mode at 10 Mb/s */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1572): warning:  #47-D: incompatible redefinition of macro "ETH_MMCCR" (declared at line 1316 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCCR            ((uint32_t)0x00000100)  /*!< MMC CR register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1573): warning:  #47-D: incompatible redefinition of macro "ETH_MMCRIR" (declared at line 1317 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCRIR           ((uint32_t)0x00000104)  /*!< MMC RIR register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1574): warning:  #47-D: incompatible redefinition of macro "ETH_MMCTIR" (declared at line 1318 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCTIR           ((uint32_t)0x00000108)  /*!< MMC TIR register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1575): warning:  #47-D: incompatible redefinition of macro "ETH_MMCRIMR" (declared at line 1319 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCRIMR          ((uint32_t)0x0000010C)  /*!< MMC RIMR register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1576): warning:  #47-D: incompatible redefinition of macro "ETH_MMCTIMR" (declared at line 1320 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCTIMR          ((uint32_t)0x00000110)  /*!< MMC TIMR register */ 
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1577): warning:  #47-D: incompatible redefinition of macro "ETH_MMCTGFSCCR" (declared at line 1321 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCTGFSCCR       ((uint32_t)0x0000014C)  /*!< MMC TGFSCCR register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1578): warning:  #47-D: incompatible redefinition of macro "ETH_MMCTGFMSCCR" (declared at line 1322 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCTGFMSCCR      ((uint32_t)0x00000150)  /*!< MMC TGFMSCCR register */ 
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1579): warning:  #47-D: incompatible redefinition of macro "ETH_MMCTGFCR" (declared at line 1323 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCTGFCR         ((uint32_t)0x00000168)  /*!< MMC TGFCR register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1580): warning:  #47-D: incompatible redefinition of macro "ETH_MMCRFCECR" (declared at line 1324 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCRFCECR        ((uint32_t)0x00000194)  /*!< MMC RFCECR register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1581): warning:  #47-D: incompatible redefinition of macro "ETH_MMCRFAECR" (declared at line 1325 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCRFAECR        ((uint32_t)0x00000198)  /*!< MMC RFAECR register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1582): warning:  #47-D: incompatible redefinition of macro "ETH_MMCRGUFCR" (declared at line 1326 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define ETH_MMCRGUFCR        ((uint32_t)0x000001C4)  /*!< MMC RGUFCR register */
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1715): warning:  #47-D: incompatible redefinition of macro "MACMIIAR_CR_MASK" (declared at line 1311 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define MACMIIAR_CR_MASK    ((uint32_t)0xFFFFFFE3)
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1718): warning:  #47-D: incompatible redefinition of macro "MACCR_CLEAR_MASK" (declared at line 1312 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define MACCR_CLEAR_MASK    ((uint32_t)0xFF20810F)  
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1721): warning:  #47-D: incompatible redefinition of macro "MACFCR_CLEAR_MASK" (declared at line 1313 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define MACFCR_CLEAR_MASK   ((uint32_t)0x0000FF41)
+..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h(1725): warning:  #47-D: incompatible redefinition of macro "DMAOMR_CLEAR_MASK" (declared at line 1314 of "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h")
+  #define DMAOMR_CLEAR_MASK   ((uint32_t)0xF8DE3F23)
+../Core/Src/main.c: 28 warnings, 0 errors
+compiling cmd_process.c...
+..\it6635\../it6635/chip/it6635_drv.h(439): warning:  #1295-D: Deprecated declaration _aeq_diable_eq_trigger - give arg types
+  void _aeq_diable_eq_trigger();
+..\Core\Src\cmd_process.c: 1 warning, 0 errors
+compiling pjlink.c...
+..\Core\Src\pjlink.c(798): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                        strlen(hw_info.serial_num));
+..\Core\Src\pjlink.c(797): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+      construct_message(pj_tcp_tx_buf, pj_cmd->class[1], pj_cmd->command, PJ_CMD_ASSIGN, hw_info.serial_num,
+..\Core\Src\pjlink.c: 2 warnings, 0 errors
+compiling logger.c...
+compiling modectl.c...
+compiling fanctl.c...
+linking...
+Program Size: Code=112584 RO-data=1340 RW-data=1696 ZI-data=126200  
+FromELF: creating hex file...
+After Build - User command #1: C:\Keil_v5\\ARM\ARMCC\bin\fromelf.exe --bin --output=output\debug\PJMainControlMCU.bin .\output\debug\PJMainControlMCU.axf
+After Build - User command #2: .\output\translate.bat debug
+The 'release' argument is required.  
+".\output\debug\PJMainControlMCU.axf" - 0 Error(s), 31 Warning(s).

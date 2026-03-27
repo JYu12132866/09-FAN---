@@ -1,0 +1,40 @@
+// Copyright (C) 2016 i-Chips Technology Inc. All Rights Reserved.
+#include "headers.h"
+
+#ifndef INCLUDED_DECLARE_GPS_H
+#define INCLUDED_DECLARE_GPS_H
+
+// parameter definition
+//===== edgeblend mode =====//
+extern int PS_SPLIT_TYPE;
+extern int PS_SPLIT_IMAGE;
+
+//===== parameters 1 =====//
+extern int PS_WP_HW;
+extern int PS_WP_VW;
+extern int PS_WP_HW_GRD;
+extern int PS_WP_VW_GRD;
+extern int PS_WP_BLACTHST;
+extern int PS_WP_BLACTVST;
+extern float PS_WP_LIMH_ITV;
+extern float PS_WP_LIMV_ITV;
+
+extern int PS_UC_HW;
+extern int PS_UC_VW;
+extern int PS_UC_HW_GRD_NUM;
+extern int PS_UC_VW_GRD_NUM;
+extern int PS_UC_HW_EDGRD;
+extern int PS_UC_VW_EDGRD;
+extern int PS_UC_HW_GRD_MAX;
+extern int PS_UC_VW_GRD_MAX;
+
+//===== parameters 2 =====//
+extern int PS_CUR_DEF_IX[9];
+extern int PS_CUR_DEF_IY[9];
+extern int PS_CUR_DEF_OX[9];
+extern int PS_CUR_DEF_OY[9];
+
+//===== parameters 3 =====//
+extern int PS_INPUT_ERR;
+
+#endif

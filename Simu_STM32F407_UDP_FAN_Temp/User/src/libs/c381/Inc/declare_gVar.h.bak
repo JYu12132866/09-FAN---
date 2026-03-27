@@ -1,0 +1,78 @@
+// Copyright (C) 2016 i-Chips Technology Inc. All Rights Reserved.
+#include "headers.h"
+
+#ifndef INCLUDED_DECLARE_GVAR_H
+#define INCLUDED_DECLARE_GVAR_H
+
+// parameter definition
+
+//===== Main control parameters =====//
+extern int button_num;
+extern int st_num;
+extern int FLG_AUTO_RETURN;
+extern int st_num_old;
+
+//===== Warp Table parameters ====//
+extern int GV_WARP_TABLE_X[Def_HW_Max_GRD][Def_VW_Max_GRD];
+extern int GV_WARP_TABLE_Y[Def_HW_Max_GRD][Def_VW_Max_GRD];
+
+//===== OSD Cursor parameters ====//
+extern int GV_NUM_HGRID;
+extern int GV_NUM_VGRID;
+extern int GV_NUM_HGRID_m1;
+extern int GV_NUM_VGRID_m1;
+extern int GV_NUM_HGRID_m2;
+extern int GV_NUM_VGRID_m2;
+extern int GV_NUM_HGRID_p1;
+extern int GV_NUM_VGRID_p1;
+
+extern int GV_PREV_SEL_GRID_X;
+extern int GV_PREV_SEL_GRID_Y;
+extern int GV_WP_TABLE_COLOR;
+
+extern char GV_GRID_DISP[9][9];
+extern int GV_GRID_EN[9][9];
+
+extern int GV_WP_MODE_WP;
+extern int GV_CUR_INTERNAL_ON_WP;
+
+//===== warp parameters ====//
+extern line_coef_t GV_WP_VER_LINE[9][8];
+extern line_coef_t GV_WP_HOR_LINE[8][9];
+extern line_coef_t GV_WP_HOR_LINE_MV[8];
+extern line_coef_t GV_WP_VER_LINE_MV[Def_HW_Max_GRD][8];
+extern coord_f_t GV_CP[9][9];
+extern int GV_HGRID_CLC_EN[9];
+extern int GV_VGRID_CLC_EN[9];
+
+//===== warp_2x2 parameters ====//
+extern float GV_PJC_A[3];
+extern float GV_PJC_B[3];
+extern float GV_PJC_C[3];
+
+//===== Edgeblend Gain ====//
+extern int GV_EGB_IHW;
+extern int GV_EGB_IVW;
+
+//===== gamma parameters ====//
+extern int GV_TEMP_GAMMA_TABLE[1024];
+
+//===== Uniformity ====//
+extern int GV_UC_CUR_EN;
+extern float GV_UC_GAIN_ORG[3][3];
+
+//===== Register parameters =====//
+extern int GV_RTCT;
+extern int GV_EGBCT;
+
+//===== old parameters for input image splitter ====//
+extern int GV_EGB_OHW_OLD;
+extern int GV_EGB_OVW_OLD;
+
+//===== load_register_list =====//
+extern declare_reg_h_t *g_reglist_head;
+
+//===== Write register control parameters for evbBoard =====//
+extern int g_current_bank;
+
+#endif
