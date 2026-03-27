@@ -168,6 +168,8 @@ void SPI2_SlaveComm_Start(void)
   spi_cmd_pending = 0;
   spi_cmd_len = 0;
   
+  spi_test = 0;
+
   memset(spi_rx_buf, 0, sizeof(spi_rx_buf));
   memset(spi_tx_buf, 0, sizeof(spi_tx_buf));
   memset(spi_cmd_buf, 0, sizeof(spi_cmd_buf));
